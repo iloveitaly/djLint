@@ -65,7 +65,11 @@ build-backend = "hatchling.build"
 build = "cp*"
 build-frontend = "build[uv]"
 environment.HATCH_BUILD_HOOK_ENABLE_MYPYC = "1"
-skip = ["*-manylinux_i686", "*-musllinux_*", "*-win32"]
+# skip = [
+#   "cp313t-*",
+#   "*-win32",
+#   "*-musllinux_aarch64",
+# ]
 
 [tool.hatch.build.targets.sdist]
 include = ["djlint", "mypy.ini"]
