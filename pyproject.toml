@@ -90,3 +90,6 @@ dependencies = [
 enable-by-default = false
 exclude = ["djlint/__main__.py"]
 options = { opt_level = "3", debug_level = "0" }
+
+[tool.uv]
+exclude-newer = "3 days"
