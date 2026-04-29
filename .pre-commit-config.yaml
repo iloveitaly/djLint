@@ -39,6 +39,7 @@ repos:
     rev: v1.20.2
     hooks:
       - id: mypy
+        language: python
         args:
           - --scripts-are-modules
         additional_dependencies:
@@ -49,8 +50,8 @@ repos:
           - pathspec
           - pytest
           - tomli
-          - types-colorama
-          - types-pyyaml
-          - types-regex
-          - types-tqdm
-          - typing-extensions
+          - types-colorama==0.4.15.20260408
+          - types-pyyaml==6.0.12.20260408
+          - types-regex==2026.4.4.20260408
+          - types-tqdm==4.67.3.20260408
+          - typing-extensions==4.15.0
